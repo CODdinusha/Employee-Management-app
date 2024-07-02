@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Details of Employees Who Have Left</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Display Details of Employees Who Have Left</h1>
+    <form method="POST" action="{{ url_for('display_left') }}">
+        <input type="submit" value="Display Left">
+    </form>
+    <br>
+    <button onclick="location.href='{{ url_for('menu') }}'">Main Menu</button>
+</body>
+</html>

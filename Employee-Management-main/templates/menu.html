@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Employee Management System</h1>
+    <ul>
+        <li><a href="{{ url_for('register') }}">Register New Employees</a></li>
+        <li><a href="{{ url_for('update') }}">Update Details of Employees</a></li>
+        <li><a href="{{ url_for('display') }}">Display Details of an Employee</a></li>
+        <li><a href="{{ url_for('remove') }}">Remove an Employee Who Has Left Office</a></li>
+        <li><a href="{{ url_for('display_all') }}">Display All Employee Details</a></li>
+        <li><a href="{{ url_for('display_left') }}">Display Details of Employees Who Have Left Office</a></li>
+        <li><a href="{{ url_for('display_sorted') }}">Display Sorted Employee Details</a></li>
+        <li><a href="{{ url_for('avg_salary') }}">Display Average Salary</a></li>
+        <li><a href="{{ url_for('create_pay_slip') }}">Create Pay Slip of an Employee</a></li>
+        <li><a href="{{ url_for('delete_all') }}">Remove All Employee Details</a></li>
+        <li><a href="{{ url_for('create_table') }}">Create Table</a></li>
+        <li><a href="{{ url_for('display_tables') }}">Display All Tables</a></li>
+    </ul>
+</body>
+</html>

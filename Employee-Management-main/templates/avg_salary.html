@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Average Salary</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Average Salary</h1>
+    <form method="POST" action="{{ url_for('avg_salary') }}">
+        <input type="submit" value="Calculate Average Salary">
+    </form>
+    <br>
+    <button onclick="location.href='{{ url_for('menu') }}'">Main Menu</button>
+</body>
+</html>

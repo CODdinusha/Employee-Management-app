@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remove Employee</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Remove Employee</h1>
+    <form method="POST" action="{{ url_for('remove') }}">
+        <!-- Form fields for removing an employee -->
+        <label for="emp_id">Employee ID:</label>
+        <input type="text" id="emp_id" name="emp_id" required><br><br>
+        <input type="submit" value="Remove">
+    </form>
+    <br>
+    <button onclick="location.href='{{ url_for('menu') }}'">Main Menu</button>
+</body>
+</html>

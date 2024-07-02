@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Pay Slip</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Create Pay Slip</h1>
+    <form method="POST" action="{{ url_for('create_pay_slip') }}">
+        <!-- Form fields for creating pay slip -->
+        <label for="emp_id">Employee ID:</label>
+        <input type="text" id="emp_id" name="emp_id" required><br><br>
+        <label for="month">Month:</label>
+        <input type="text" id="month" name="month" required><br><br>
+        <input type="submit" value="Create Pay Slip">
+    </form>
+    <br>
+    <button onclick="location.href='{{ url_for('menu') }}'">Main Menu</button>
+</body>
+</html>

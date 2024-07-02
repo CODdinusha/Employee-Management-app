@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Employee Details</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Update Employee Details</h1>
+    <form method="POST" action="{{ url_for('update') }}">
+        <!-- Form fields for updating employee details -->
+        <label for="emp_name">Employee Name:</label>
+        <input type="text" id="emp_name" name="emp_name" required><br><br>
+        <label for="field_name">Field to Update:</label>
+        <input type="text" id="field_name" name="field_name" required><br><br>
+        <label for="new_value">New Value:</label>
+        <input type="text" id="new_value" name="new_value" required><br><br>
+        <input type="submit" value="Update">
+    </form>
+    <br>
+    <button onclick="location.href='{{ url_for('menu') }}'">Main Menu</button>
+</body>
+</html>

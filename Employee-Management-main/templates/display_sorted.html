@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Sorted Employee Details</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Display Sorted Employee Details</h1>
+    <form method="POST" action="{{ url_for('display_sorted') }}">
+        <label for="field_name">Field Name for Sorting:</label>
+        <input type="text" id="field_name" name="field_name" required><br><br>
+        <input type="submit" value="Display Sorted">
+    </form>
+    <br>
+    <button onclick="location.href='{{ url_for('menu') }}'">Main Menu</button>
+</body>
+</html>
+
